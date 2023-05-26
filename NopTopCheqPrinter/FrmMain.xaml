@@ -1,0 +1,58 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:utilities="clr-namespace:Utilities;assembly=Utilities"
+        xmlns:super="clr-namespace:NopTopCheqPrinter"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" IsVisibleChanged="Window_IsVisibleChanged"
+        x:Class="NopTopCheqPrinter.FrmMain"
+        TextElement.Foreground="{DynamicResource   MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        Title="نرم افزار چاپ چک" Height="526" Width="758" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Margin="0">
+    <Window.Resources>
+        <Style TargetType="{x:Type xctk:MaskedTextBox}" BasedOn="{StaticResource MaterialDesignTextBox}" />
+        <Style x:Key="TransparentStyle" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="#FF2196F3">
+                            <ContentPresenter/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Button Content="چاپ" HorizontalAlignment="Left" Margin="65,410,0,0" Grid.Row="1" VerticalAlignment="Top" Width="615" Click="Button_Click" Height="40"/>
+        <TextBlock x:Name="TxtMablaghH" TextAlignment="Center" Background ="yellow" HorizontalAlignment="Left" Margin="63,30,0,0" Grid.Row="1" TextWrapping="Wrap" Text="." VerticalAlignment="Top" Height="365" Width="262"/>
+        <xctk:MaskedTextBox Mask="00/00/0000" PreviewTextInput="textBoxValue_PreviewTextInput" DataObject.Pasting="textBoxValue_Pasting" x:Name="TxtDate"  Width="200" materialDesign:HintAssist.Hint="تاریخ" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+            VerticalAlignment="Center" HorizontalAlignment="Center" Margin="460,24,67,356" Grid.Row="1"
+                            TextAlignment="Right" FlowDirection="RightToLeft"
+                            />
+        <xctk:LongUpDown BorderBrush="DarkGray" x:Name="TxtMablaghA" ValueChanged="TxtMablaghA_ValueChanged"  Margin="450,125,77,332" BorderThickness="0,0,0,1" ShowButtonSpinner="False" UpdateValueOnEnterKey="True" AllowSpin="False" CultureInfo="fa-IR" FormatString="C0" Value="0" Grid.RowSpan="2" GotFocus="TxtMablaghA_GotFocus" />
+        <TextBox x:Name="TxtDarVajh"  TextAlignment="Left" FlowDirection="RightToLeft" Width="294" materialDesign:HintAssist.Hint="در وجه" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+            VerticalAlignment="Center" HorizontalAlignment="Center" Margin="366,180,75,270" Grid.Row="1"/>
+        <TextBox  x:Name="TxtTozihat" TextWrapping="Wrap" AcceptsReturn="True" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"
+            TextAlignment="Center" FlowDirection="RightToLeft" Width="294" materialDesign:HintAssist.Hint="توضیحات" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+            VerticalAlignment="Center" HorizontalAlignment="Center" Margin="366,220,77,140" Grid.Row="1" Height="115" />
+        <ToggleButton x:Name="RdDirectPrint" IsChecked="False" Margin="610,350,47,87" Grid.Row="1" >
+            <materialDesign:PackIcon Kind="Printer" RenderTransformOrigin="0.399,1.364" />
+        </ToggleButton>
+        <Label Content="©All Rights Reserved > T.me/ArashZandi" HorizontalAlignment="Left" Margin="67,455,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RdBankMelli" Content="ملی"  HorizontalAlignment="Left" Margin="455,380,0,0" Grid.Row="1" VerticalAlignment="Top" FlowDirection="RightToLeft" IsChecked="True"/>
+        <RadioButton x:Name="RdBankMellat" Content="ملت" HorizontalAlignment="Left" Margin="385,380,0,0" Grid.Row="1" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
+    </Grid>
+</Window>
+
+
+
+
