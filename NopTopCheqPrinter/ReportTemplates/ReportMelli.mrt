@@ -29,7 +29,7 @@
           <AllowHtmlTags>True</AllowHtmlTags>
           <Brush>Transparent</Brush>
           <CanGrow>True</CanGrow>
-          <ClientRectangle>9.1,2.6,1.8,0.3</ClientRectangle>
+          <ClientRectangle>8.95,2.6,1.9,0.3</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
           <Font>Calibri,12,Bold</Font>
@@ -38,7 +38,7 @@
           <Name>Text1</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
-          <Text>&lt;letter-spacing="0.5"&gt;{VarDateA}&lt;/letter-spacing&gt;</Text>
+          <Text>&lt;letter-spacing="0.6"&gt;{VarDateA}&lt;/letter-spacing&gt;</Text>
           <TextBrush>Black</TextBrush>
           <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
           <TextQuality>Wysiwyg</TextQuality>
@@ -48,7 +48,7 @@
         <Text2 Ref="4" type="Text" isKey="true">
           <Brush>Transparent</Brush>
           <CanShrink>True</CanShrink>
-          <ClientRectangle>5.4,3.4,4.3,0.4</ClientRectangle>
+          <ClientRectangle>5.4,3.35,4.3,0.4</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
           <Font>B Nazanin,12,Bold</Font>
@@ -59,7 +59,7 @@
           <Parent isRef="2" />
           <ShiftMode>IncreasingSize, DecreasingSize</ShiftMode>
           <ShrinkFontToFit>True</ShrinkFontToFit>
-          <Text>{VarMablaghH} ریال</Text>
+          <Text>{VarMablaghH}</Text>
           <TextBrush>Black</TextBrush>
           <Type>Expression</Type>
           <VertAlignment>Center</VertAlignment>
@@ -67,10 +67,11 @@
         <Text3 Ref="5" type="Text" isKey="true">
           <Brush>Transparent</Brush>
           <CanShrink>True</CanShrink>
-          <ClientRectangle>8.7,3.9,2.2,0.7</ClientRectangle>
+          <ClientRectangle>8.3,3.85,2.8,0.7</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
           <Font>B Nazanin,12,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
           <Margins>0,0,0,0</Margins>
           <Name>Text3</Name>
           <Page isRef="2" />
@@ -104,7 +105,7 @@
         <Text6 Ref="7" type="Text" isKey="true">
           <AllowHtmlTags>True</AllowHtmlTags>
           <Brush>Transparent</Brush>
-          <ClientRectangle>5.1,4.4,2.8,0.4</ClientRectangle>
+          <ClientRectangle>5,4.4,2.8,0.4</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
           <Font>Calibri,12,Bold</Font>
@@ -113,7 +114,7 @@
           <Name>Text6</Name>
           <Page isRef="2" />
           <Parent isRef="2" />
-          <Text>&lt;letter-spacing="0.5"&gt;{VarMablaghA}&lt;/letter-spacing&gt;</Text>
+          <Text>&lt;letter-spacing="0.65"&gt;{VarMablaghA}&lt;/letter-spacing&gt;</Text>
           <TextBrush>Black</TextBrush>
           <TextQuality>Wysiwyg</TextQuality>
           <Type>Expression</Type>
@@ -122,7 +123,7 @@
         <Text4 Ref="8" type="Text" isKey="true">
           <Brush>Transparent</Brush>
           <CanShrink>True</CanShrink>
-          <ClientRectangle>8,2.8,2.2,0.2</ClientRectangle>
+          <ClientRectangle>8,2.95,2.2,0.2</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
           <Font>B Nazanin,9,Bold</Font>
@@ -162,13 +163,13 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>12/20/2021 9:08:43 AM</ReportChanged>
+  <ReportChanged>7/23/2023 12:33:38 PM</ReportChanged>
   <ReportCreated>11/3/2021 9:13:18 AM</ReportCreated>
-  <ReportFile>C:\OtherFiles\WorkSpaceTest\NopTopCheqPrinter\NopTopCheqPrinter\ReportTemplates\ReportMelli.mrt</ReportFile>
-  <ReportGuid>28c98696f48f48a0a39cca8f55093d8d</ReportGuid>
+  <ReportFile>G:\Sources\NopTopChequePrinter\NopTopCheqPrinter\bin\Release\ReportTemplates\ReportMelli.mrt</ReportFile>
+  <ReportGuid>787ac930a85d41c7815df9a02b98168e</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Inches</ReportUnit>
-  <ReportVersion>2021.4.2.0</ReportVersion>
+  <ReportVersion>2023.1.1.0</ReportVersion>
   <Script>using System;
 using System.Drawing;
 using System.Windows.Forms;

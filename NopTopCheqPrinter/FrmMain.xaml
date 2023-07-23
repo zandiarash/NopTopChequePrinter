@@ -33,7 +33,7 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <Button Content="چاپ" HorizontalAlignment="Left" Margin="65,410,0,0" Grid.Row="1" VerticalAlignment="Top" Width="615" Click="Button_Click" Height="40"/>
-        <TextBlock x:Name="TxtMablaghH" TextAlignment="Center" Background ="yellow" HorizontalAlignment="Left" Margin="63,30,0,0" Grid.Row="1" TextWrapping="Wrap" Text="." VerticalAlignment="Top" Height="365" Width="262"/>
+        <TextBlock x:Name="TxtMablaghH" TextAlignment="Center" Background ="Bisque" HorizontalAlignment="Left" Margin="63,30,0,0" Grid.Row="1" TextWrapping="Wrap" Text="." VerticalAlignment="Top" Height="365" Width="262"/>
         <xctk:MaskedTextBox Mask="00/00/0000" PreviewTextInput="textBoxValue_PreviewTextInput" DataObject.Pasting="textBoxValue_Pasting" x:Name="TxtDate"  Width="200" materialDesign:HintAssist.Hint="تاریخ" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
             VerticalAlignment="Center" HorizontalAlignment="Center" Margin="460,24,67,356" Grid.Row="1"
                             TextAlignment="Right" FlowDirection="RightToLeft"
